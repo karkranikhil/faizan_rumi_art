@@ -57,17 +57,18 @@ video{
 }
 .hero-center{
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (min-width: 720px) {
-  .hero-center {
-    top: 20%;
-  }
-}
+
 @media only screen and (min-width: 1200px) {
   .hero-center {
-    top: 50%;
+    top: 40%;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .hero-center {
+    top: 40%;
   }
 }

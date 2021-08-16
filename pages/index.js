@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
 
       <main>
-       <div>
+       <div className="hidden lg:block">
         <video autoPlay
           muted
           loop id="myVideo">
@@ -33,8 +33,13 @@ export default function Home() {
           </video>
           <Header title="FAIZAN RUMI ART" subtext ="👨🏽‍🎨 🎨 Abstract Artist 👨🏽‍🎨 🎨" banner/>
        </div>
-        
-          <Header title="PORTFOLIO" subtext ="👨🏽‍🎨 🎨 Collection of my Art 👨🏽‍🎨 🎨" showLine/>
+          <div className="lg:hidden">
+            <Header title="FAIZAN RUMI ART" subtext ="👨🏽‍🎨 🎨 Abstract Artist 👨🏽‍🎨 🎨" showLine/>
+          </div>
+          <div className="hidden lg:block">
+            <Header title="PORTFOLIO" subtext ="👨🏽‍🎨 🎨 Collection of my Art 👨🏽‍🎨 🎨" showLine/>
+          </div>
+          
 
           <Gallery showLightBoxHandler={showLightBoxHandler}/>
           {showLightBox && <CustomLightbox images={IMAGES} index={photoIndex} closeHandler={closeHandler}/>}
