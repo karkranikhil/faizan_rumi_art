@@ -55,9 +55,19 @@ video{
   transition: "opacity, 2s ease-in-out";
   filter: brightness(50%);
 }
-.center{
+.hero-center{
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 720px) {
+  .hero-center {
+    top: 20%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-center {
+    top: 50%;
+  }
 }
